@@ -5,6 +5,8 @@ zookeeper:
     - "22"
 nimbus:
   image: wurstmeister/storm-nimbus
+  volumes:
+      - /jars:/jars  
   ports:
     - "49773:3773"
     - "49772:3772"
